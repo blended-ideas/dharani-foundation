@@ -3,32 +3,92 @@
   grid-gap: 20px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-}
 
-.heroImage {
-  max-height: 600px;
-  overflow: hidden;
-  grid-row: 1/2;
-  grid-column: 1/2;
-}
-
-.heroText {
-  grid-area: 1/1/2/2;
-  margin: 4rem;
-  background: rgba(white, 0.4);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  .title {
-    font-size: clamp(1rem, 4vw, 4rem);
-    font-weight: bold;
+  .heroImage {
+    max-height: 600px;
+    overflow: hidden;
+    grid-row: 1/2;
+    grid-column: 1/2;
   }
 
-  .subtitle {
-    font-size: clamp(0.8rem, 2vw, 2rem);
+  .heroText {
+    grid-area: 1/1/2/2;
+    margin: 4rem;
+    background: rgba(white, 0.4);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .title {
+      font-size: clamp(1rem, 4vw, 4rem);
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: clamp(0.8rem, 2vw, 2rem);
+    }
+  }
+}
+
+.homeAbout {
+  text-align: center;
+  padding: 7rem 3rem;
+  background-color: var(--theme-secondary);
+
+  .detailContainer {
+    max-width: 700px;
+    margin: auto;
+
+    .about-title {
+      margin-top: 2rem;
+      font-size: 3rem;
+    }
+
+    .about-detail {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.homeVision {
+  text-align: center;
+  padding: 7rem 3rem;
+
+  .detailContainer {
+    max-width: 700px;
+    margin: auto;
+
+    .visionTitle {
+      margin-top: 2rem;
+      font-size: 4rem;
+    }
+
+    .visionDetail {
+      margin-top: 2rem;
+    }
+  }
+}
+
+
+.homeMission {
+  text-align: center;
+  padding: 7rem 3rem;
+  background-color: var(--theme-secondary);
+
+  .detailContainer {
+    max-width: 700px;
+    margin: auto;
+
+    .missionTitle {
+      margin-top: 2rem;
+      font-size: 4rem;
+    }
+
+    .missionItems {
+      text-align: left;
+    }
   }
 }
 
@@ -37,14 +97,23 @@
   .homeHero {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-  }
-  .heroText {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    //grid-template-rows: 1fr;
+
+    .heroText {
+      grid-row: 1/2;
+      grid-column: 1/2;
+      //grid-template-rows: 1fr;
+    }
+
+    .heroImage {
+      grid-area: 1/1/2/4;
+    }
   }
 
-  .heroImage {
-    grid-area: 1/1/2/4;
+  .homeMission {
+    .detailContainer {
+      .missionItems {
+        text-align: center;
+      }
+    }
   }
 }

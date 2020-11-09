@@ -1,6 +1,11 @@
+:root {
+  --theme-primary: #394737;
+  --theme-secondary: #C9DD72;
+}
+
 $theme-colors: (
-        "info": tomato,
-        "danger": teal
+        "primary": #394737,
+        "secondary": #C9DD72,
 );
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Raleway:wght@300;400;700&display=swap');
@@ -11,10 +16,15 @@ body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, .brand {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
 }
 
 .brand {
-  font-family: 'Cormorant Garamond', serif;
   font-size: 16px;
 }
 
