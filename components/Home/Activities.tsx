@@ -43,17 +43,17 @@ const HomeActivities = () => {
             <div className={'card ' + ac.theme}>
                 <img src={ac.image} className="card-img" alt={ac.title + ' | Dharani Foundation'}/>
                 <div className="card-body p-5">
-                    <h5 className={styles.title}>{ac.title}</h5>
-                    <p className={styles.subtitle}>{ac.subtitle}</p>
+                    <h5 className={styles.activityItemTitle}>{ac.title}</h5>
+                    <p className={styles.activityItemSubTitle}>{ac.subtitle}</p>
                 </div>
             </div>
         )
     })
     return (
         <section className={styles.homeActivities}>
-            <h3 className={styles.title}>Activities</h3>
+            <h3 className={styles.activityTitle}>Activities</h3>
 
-            <div className={styles.subtitle}>Making a Difference</div>
+            <div className={styles.activitySubTitle}>Making a Difference</div>
 
             <div className={styles.activityItems}>
                 {activities}

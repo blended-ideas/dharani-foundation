@@ -100,19 +100,28 @@
   max-width: 1200px;
   margin: auto;
 
-  .title {
-    font-size: 2rem;
+  .activityTitle {
+    font-size: clamp(2rem, 4vw, 4rem);
   }
 
-  .subtitle {
-    font-size: 1rem;
-    margin-bottom: 0;
+  .activitySubTitle {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin-bottom: 2rem;
   }
 
   .activityItems {
     display: grid;
     grid-gap: 3rem;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    .activityItemTitle {
+      font-size: 1.5rem;
+    }
+
+    .activityItemSubTitle {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
 
     .primaryTile {
       background-color: var(--theme-primary);
@@ -130,6 +139,42 @@
   }
 }
 
+
+.homeFounders {
+  text-align: center;
+  padding: 7rem 3rem;
+  background-color: var(--light);
+
+  .founderContainer {
+    max-width: 800px;
+    margin: auto;
+    width: 90%;
+  }
+
+  .founderTitle {
+    font-size: clamp(2rem, 4vw, 4rem);
+  }
+
+  .founderTile {
+    text-align: left;
+    margin: 2rem 0;
+
+    .founderName {
+      font-size: 2rem;
+      //font-weight: bold;
+    }
+
+    .founderSub {
+      font-size: 1rem;
+      color: var(--gray);
+    }
+
+    .founderDesc {
+      margin-top: 1.5rem;
+      text-align: justify;
+    }
+  }
+}
 
 @media (min-width: 700px) {
   .homeHero {
