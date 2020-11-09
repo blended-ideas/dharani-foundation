@@ -7,6 +7,21 @@ import Footer from '../components/Footer';
 export default function Home() {
     return (
         <>
+            <Head>
+                <title>Dharani Foundation | Belgaum</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+                <meta name="description"
+                      content="Dharani Foundation is a Non-Profit organisation, formally registered in 2019, which focuses on bringing Environmental Awareness to the rural households. We work to bring about community Environmental Sustainability and promote, Hygiene, Health and Happiness"/>
+                <meta property="og:title" content="Dharani Foundation | Belgaum"/>
+                <meta property="og:description"
+                      content="Dharani Foundation is a Non-Profit organisation, formally registered in 2019, which focuses on bringing Environmental Awareness to the rural households. We work to bring about community Environmental Sustainability and promote, Hygiene, Health and Happiness"/>
+                <meta property="og:url" content="https://www.dharanifoundation.in/"/>
+                <meta property="og:site_name" content="Dharani Foundation"/>
+                <meta property="og:type" content="website"/>
+                <meta name="google-site-verification" content="SXxf_to8didj2Q7LpAYtCuAgeGKninAneCalxPF7seU"/>
+                <meta name="keywords"
+                      content="Environmental Awareness Programs, Nisarga Ganapathi, Personal Hygiene, Plantation"/>
+            </Head>
             <Header/>
             <div className={styles.container}>
                 <main className={styles.main}>
