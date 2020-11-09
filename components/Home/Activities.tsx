@@ -43,7 +43,7 @@ const HomeActivities = () => {
             <div className={'card ' + ac.theme}>
                 <img src={ac.image} className="card-img" alt={ac.title + ' | Dharani Foundation'}/>
                 <div className="card-body p-5">
-                    <h5 className={styles.activityItemTitle}>{ac.title}</h5>
+                    <h4 className={styles.activityItemTitle}>{ac.title}</h4>
                     <p className={styles.activityItemSubTitle}>{ac.subtitle}</p>
                 </div>
             </div>
