@@ -1,14 +1,8 @@
 import styles from '../styles/component/header.module.scss';
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {Container, Nav, Navbar} from 'react-bootstrap';
 
 const Header = () => {
-    const [navbarCollapsed, setNavBarCollapsed] = useState(false);
-    const collapseClass = navbarCollapsed ? 'collapse navbar-collapse' : null;
-
-    useEffect(() => {
-        setNavBarCollapsed(window.innerWidth < 500);
-    });
 
     return (
         <header className={styles.header}>
