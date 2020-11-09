@@ -1,6 +1,6 @@
 import styles from '../styles/component/footer.module.scss';
 
-export default () => {
+const Footer = () => {
     const year = (new Date()).getFullYear();
     return (
         <footer className={styles.footer}>
@@ -12,3 +12,5 @@ export default () => {
         </footer>
     )
 }
+
+export default Footer;

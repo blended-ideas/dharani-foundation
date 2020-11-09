@@ -2,7 +2,7 @@ import styles from '../styles/component/header.module.scss';
 import React, {useEffect, useState} from 'react';
 import {Container, Nav, Navbar} from 'react-bootstrap';
 
-export default () => {
+const Header = () => {
     const [navbarCollapsed, setNavBarCollapsed] = useState(false);
     const collapseClass = navbarCollapsed ? 'collapse navbar-collapse' : null;
 
@@ -32,3 +32,5 @@ export default () => {
         </header>
     )
 }
+
+export default Header;
