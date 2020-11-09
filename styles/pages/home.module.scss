@@ -92,6 +92,44 @@
   }
 }
 
+.homeActivities {
+  text-align: center;
+  padding: 7rem 3rem;
+
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+
+  .activityItems {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    .primaryTile {
+      background-color: var(--theme-primary);
+      color: var(--white);
+    }
+
+    .secondaryTile {
+      background-color: var(--theme-secondary);
+    }
+
+    .darkTile {
+      background-color: var(--dark);
+      color: var(--white);
+    }
+  }
+}
+
 
 @media (min-width: 700px) {
   .homeHero {
