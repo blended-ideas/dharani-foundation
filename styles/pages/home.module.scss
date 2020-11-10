@@ -176,6 +176,51 @@
   }
 }
 
+.homeMembers {
+  text-align: center;
+  padding: 7rem 3rem;
+  background-color: var(--theme-secondary);
+
+  .memberContainer {
+    max-width: 1200px;
+    margin: auto;
+    width: 95%;
+  }
+
+  .memberHeader {
+    font-size: clamp(2rem, 4vw, 4rem);
+  }
+
+  .memberSubHeader {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin-bottom: 2rem;
+  }
+
+  .memberWrapper {
+    display: grid;
+    grid-row-gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    .memberTile {
+      place-self: center;
+      text-align: center;
+
+      .memberImage {
+        max-width: 200px;
+        width: 100%;
+      }
+
+      .memberName {
+        margin-top: 1rem;
+      }
+
+      .memberDesignation {
+        color: var(--gray);
+      }
+    }
+  }
+}
+
 @media (min-width: 700px) {
   .homeHero {
     grid-template-columns: repeat(2, 1fr);
