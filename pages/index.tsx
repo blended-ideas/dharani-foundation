@@ -9,6 +9,7 @@ import HomeMission from '../components/Home/Mission';
 import HomeActivities from '../components/Home/Activities';
 import HomeFounders from '../components/Home/Founders';
 import HomeMembers from '../components/Home/HomeMemebers';
+import HomeFinalMessage from '../components/Home/FinalMessage';
 
 export default function Home() {
     return (
@@ -22,6 +23,7 @@ export default function Home() {
             <HomeActivities/>
             <HomeFounders/>
             <HomeMembers/>
+            <HomeFinalMessage/>
             <Footer/>
         </>
     )

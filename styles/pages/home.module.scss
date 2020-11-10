@@ -221,6 +221,15 @@
   }
 }
 
+.homeFinalMessage {
+  text-align: center;
+  margin: 7rem auto;
+  padding: 7rem 3rem;
+  background-color: var(--light);
+  width: 95%;
+  font-size: 1.2rem;
+}
+
 @media (min-width: 700px) {
   .homeHero {
     grid-template-columns: repeat(2, 1fr);
