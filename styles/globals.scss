@@ -36,3 +36,13 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.page-container {
+  padding-bottom: 60px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.min-page-height {
+  min-height: 600px;
+}

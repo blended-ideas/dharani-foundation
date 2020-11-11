@@ -1,7 +1,4 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import CommonHead from '../components/CommonHead';
 import HomeHero from '../components/Home/Hero';
 import HomeAbout from '../components/Home/About';
 import HomeVision from '../components/Home/Vision';
@@ -10,12 +7,11 @@ import HomeActivities from '../components/Home/Activities';
 import HomeFounders from '../components/Home/Founders';
 import HomeMembers from '../components/Home/HomeMemebers';
 import HomeFinalMessage from '../components/Home/FinalMessage';
+import Layout from '../components/Layout';
 
 export default function Home() {
     return (
-        <>
-            <CommonHead headTitle="Dharani Foundation | Belgaum"/>
-            <Header/>
+        <Layout>
             <HomeHero/>
             <HomeAbout/>
             <HomeVision/>
@@ -24,7 +20,6 @@ export default function Home() {
             <HomeFounders/>
             <HomeMembers/>
             <HomeFinalMessage/>
-            <Footer/>
-        </>
+        </Layout>
     )
 }
